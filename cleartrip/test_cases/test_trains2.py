@@ -17,3 +17,15 @@ def test_trains():
     train_database().train_details(driver)     #searchTrains()
     verifyPage().verifyProgram(driver)       #verifytrainlist()
     Browser_utils().closeBrowser(driver)
+
+    
+def test_trains2():
+    
+    driver=Browser_utils().openBrowser()
+    Browser_utils().invokeApp(driver)
+    verifyPage().verifyHome(driver)          #verifyHome of cleartrip       
+    navigate().navigate_trainspage(driver)   #navigate_trainspage()               
+    verifyPage().verifyTrainpage(driver)    #verifyTrainpage() 
+    train_database().train_details(driver)     #searchTrains()
+    verifyPage().verifyProgram(driver)       #verifytrainlist()
+    Browser_utils().closeBrowser(driver)
